@@ -1,4 +1,4 @@
-image: ghcr.io/dfinity/icp-dev-env:release
+image: ghcr.io/fxgst/icp-dev-env:release
 
 tasks:
   - before: |
