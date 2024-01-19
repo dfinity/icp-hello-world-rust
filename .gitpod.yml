@@ -11,6 +11,8 @@ tasks:
 vscode:
   extensions:
     - dfinity-foundation.vscode-motoko
+    - tamasfe.even-better-toml
+    - rust-lang.rust-analyzer
 
 ports:
   - name: Replica
