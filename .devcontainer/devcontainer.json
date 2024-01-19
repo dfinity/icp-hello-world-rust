@@ -9,9 +9,6 @@
         "dockerfile": "Dockerfile"
     },
     // Features to add to the dev container. More info: https://containers.dev/features.
-    "features": {
-        "ghcr.io/devcontainers/features/node:1": {}
-    },
     "portsAttributes": {
         "4943": {
             "label": "dfx",
@@ -23,8 +20,7 @@
         }
     },
     "onCreateCommand": "nohup bash -c 'dfx start &' && cat nohup.out && rm nohup.out",
-    "postCreateCommand": ". ${NVM_DIR}/nvm.sh && nvm install --lts",
-    "postAttachCommand": "npm install",
+    "postCreateCommand": "npm install",
     "customizations": {
         "vscode": {
             "extensions": [
