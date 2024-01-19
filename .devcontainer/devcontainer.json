@@ -1,6 +1,6 @@
 {
     "name": "ICP Hello World Rust",
-    "image": "ghcr.io/dfinity/icp-dev-env:release",
+    "image": "ghcr.io/fxgst/icp-dev-env:release",
     "portsAttributes": {
         "4943": {
             "label": "dfx",
