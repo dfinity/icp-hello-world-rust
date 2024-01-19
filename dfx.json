@@ -3,7 +3,10 @@
     "icp_hello_world_rust_backend": {
       "candid": "src/icp_hello_world_rust_backend/icp_hello_world_rust_backend.did",
       "package": "icp_hello_world_rust_backend",
-      "type": "rust"
+      "type": "custom",
+      "shrink": true,
+      "wasm": "subnet_rental_canister.wasm",
+      "build": "scripts/build.sh"
     },
     "icp_hello_world_rust_frontend": {
       "dependencies": [

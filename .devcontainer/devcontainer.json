@@ -20,11 +20,13 @@
         }
     },
     "onCreateCommand": "nohup bash -c 'dfx start &' && cat nohup.out && rm nohup.out",
-    "postStartCommand": "npm install",
+    "postStartCommand": "mv /pocket-ic ./src/icp_hello_world_rust_backend && npm install",
     "customizations": {
         "vscode": {
             "extensions": [
-                "dfinity-foundation.vscode-motoko"
+                "dfinity-foundation.vscode-motoko",
+                "tamasfe.even-better-toml",
+                "rust-lang.rust-analyzer"
             ]
         }
     }
