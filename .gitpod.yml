@@ -6,6 +6,7 @@ tasks:
       sudo apt-get install -q -y libunwind-dev
       sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
       dfx start --background --clean
+      mv /pocket-ic ./src/icp_hello_world_rust_backend
 
 vscode:
   extensions:

@@ -5,7 +5,7 @@
       "package": "icp_hello_world_rust_backend",
       "type": "custom",
       "shrink": true,
-      "wasm": "subnet_rental_canister.wasm",
+      "wasm": "icp_hello_world_rust_backend.wasm",
       "build": "scripts/build.sh"
     },
     "icp_hello_world_rust_frontend": {

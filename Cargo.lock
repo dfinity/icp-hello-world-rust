@@ -773,7 +773,7 @@ checksum = "576c539151d4769fb4d1a0c25c4108dd18facd04c5695b02cf2d226ab4e43aa5"
 name = "icp_hello_world_rust_backend"
 version = "0.1.0"
 dependencies = [
- "candid 0.8.4",
+ "candid 0.9.11",
  "ic-cdk 0.7.4",
  "ic-cdk-timers",
  "pocket-ic",

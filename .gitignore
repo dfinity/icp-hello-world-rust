@@ -12,6 +12,7 @@
 
 # generated files
 src/declarations/
+**/*.wasm
 
 # rust
 target/
@@ -22,3 +23,6 @@ dist/
 
 # environment variables
 .env
+
+# PocketIC
+src/icp_hello_world_rust_backend/pocket-ic
