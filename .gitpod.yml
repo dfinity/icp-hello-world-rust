@@ -1,12 +1,12 @@
 image: ghcr.io/fxgst/icp-dev-env:release
 
 tasks:
-  - command: |
+  - init: |
+      cp /pocket-ic ./src/icp_hello_world_rust_backend
       npm install &
       export PATH="$HOME/bin:$PATH"
       echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
       dfx start --background --clean
-      cp /pocket-ic ./src/icp_hello_world_rust_backend
 
 vscode:
   extensions:
