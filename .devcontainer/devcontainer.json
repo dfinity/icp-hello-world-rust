@@ -1,5 +1,5 @@
 {
-    "name": "ICP Hello World",
+    "name": "ICP Hello World Rust",
     "image": "ghcr.io/dfinity/icp-dev-env:release",
     "portsAttributes": {
         "4943": {
