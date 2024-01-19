@@ -1,7 +1,7 @@
 image: ghcr.io/fxgst/icp-dev-env:release
 
 tasks:
-  - before: |
+  - command: |
       npm install &
       export PATH="$HOME/bin:$PATH"
       echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
