@@ -6,7 +6,6 @@ tasks:
       sudo apt-get install -q -y libunwind-dev
       sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
       dfx start --background --clean
-   
 
 vscode:
   extensions:
