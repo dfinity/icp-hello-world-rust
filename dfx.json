@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "icp_hello_world_rust_backend": {
+      "candid": "src/icp_hello_world_rust_backend/icp_hello_world_rust_backend.did",
+      "package": "icp_hello_world_rust_backend",
+      "type": "rust"
+    },
+    "icp_hello_world_rust_frontend": {
+      "dependencies": [
+        "icp_hello_world_rust_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/icp_hello_world_rust_frontend/src/index.html"
+      },
+      "source": [
+        "src/icp_hello_world_rust_frontend/assets",
+        "dist/icp_hello_world_rust_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
