@@ -12,7 +12,8 @@
         }
     },
     "onCreateCommand": "nohup bash -c 'dfx start &' && cat nohup.out && rm nohup.out",
-    "postStartCommand": "mv /pocket-ic ./src/icp_hello_world_rust_backend && npm install",
+    "postCreateCommand": "mv /pocket-ic ./src/icp_hello_world_rust_backend",
+    "postStartCommand": "npm install",
     "customizations": {
         "vscode": {
             "extensions": [
