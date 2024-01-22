@@ -1,14 +1,14 @@
 tasks:
     - before: |
-      npm install &
-      export PATH="$HOME/bin:$PATH"
-      echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
-      sudo apt-get install -q -y libunwind-dev
-      cp /pocket-ic ./src/icp_hello_world_rust_backend
-      sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
-      dfx start --background --clean
-    command: |
-      npm start
+        npm install &
+        export PATH="$HOME/bin:$PATH"
+        echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
+        sudo apt-get install -q -y libunwind-dev
+        cp /pocket-ic ./src/icp_hello_world_rust_backend
+        sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
+        dfx start --background --clean
+      command: |
+        npm start
 
 vscode:
   extensions:
