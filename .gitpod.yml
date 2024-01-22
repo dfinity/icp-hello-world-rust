@@ -1,11 +1,14 @@
-image: ghcr.io/fxgst/icp-dev-env:release
 tasks:
-  - init: |
+    - before: |
+      npm install &
+      export MO_DEV_HIDE_URLS=1 # hide Candid UI links
       export PATH="$HOME/bin:$PATH"
       echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
-      cp /pocket-ic ./src/icp_hello_world_rust_backend
-      npm install &
+      sudo apt-get install -q -y libunwind-dev
+      sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
       dfx start --background --clean
+    command: |
+      npm start
 
 vscode:
   extensions:
