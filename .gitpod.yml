@@ -1,3 +1,4 @@
+image: ghcr.io/fxgst/icp-dev-env:release
 tasks:
   - init: |
       export PATH="$HOME/bin:$PATH"
