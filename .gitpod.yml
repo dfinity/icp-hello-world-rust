@@ -9,8 +9,8 @@ tasks:
         chmod +x pocket-ic
         mv pocket-ic ./src/icp_hello_world_rust_backend
         sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
-        dfx start --background --clean
         npm install &
+        dfx start --background --clean
 
 vscode:
   extensions:
