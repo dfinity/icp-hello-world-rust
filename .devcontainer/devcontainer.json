@@ -5,7 +5,7 @@
     "portsAttributes": {
         "4943": {
             "label": "dfx",
-            "onAutoForward": "openBrowser"
+            "onAutoForward": "ignore"
         },
         "8080": {
             "label": "dev server",
