@@ -14,7 +14,7 @@
     },
     "onCreateCommand": "nohup bash -c 'dfx start &'",
     "postCreateCommand": "mv /pocket-ic ./src/icp_hello_world_rust_backend",
-    "postAttachCommand": "bash -c '[ -f nohup.out ] && (cat nohup.out && rm nohup.out && npm i ) || exit 0'",
+    "postAttachCommand": "([ -f nohup.out ] && (npm i && cat nohup.out && rm nohup.out)) || exit 0",
     "customizations": {
         "vscode": {
             "extensions": [
