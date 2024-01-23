@@ -1,6 +1,6 @@
 # ICP Hello World Rust
 
-This repository provides a simple and quick way to start developing a canister smart contract for the [Internet Computer](https://internetcomputer.org/) in Rust.
+This repository provides a quick and simple way to start developing a canister smart contract for the [Internet Computer](https://internetcomputer.org/) in Rust.
 The repository can be used with macOS, Windows or Linux.
 
 ## Getting Started
