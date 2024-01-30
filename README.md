@@ -30,7 +30,7 @@ If your environment was restarted or has been inactive over some time, you might
 
 ## Testing your Project
 
-To run the [integration tests](/src/icp_hello_world_rust_backend/tests/integration_tests.rs#L18) for your backend canister, first run `./scripts/build.sh` to build the canister, and then `cargo test --test integration_tests`. 
+To run the [integration tests](/src/icp_hello_world_rust_backend/tests/integration_tests.rs#L18) for your backend canister, first run `dfx deploy` to build the canister Wasm, and then `cargo test --test integration_tests`. 
 
 ## Local Development
 

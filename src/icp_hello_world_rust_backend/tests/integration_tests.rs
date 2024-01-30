@@ -9,7 +9,7 @@ fn setup() -> (PocketIc, Principal) {
 
     let backend_canister = pic.create_canister();
     pic.add_cycles(backend_canister, 2_000_000_000_000); // 2T Cycles
-    let wasm = fs::read(BACKEND_WASM).expect("Build the wasm with ./scripts/build.sh");
+    let wasm = fs::read(BACKEND_WASM).expect("Wasm file not found, run 'dfx deploy'.");
     pic.install_canister(backend_canister, wasm, vec![], None);
     (pic, backend_canister)
 }
