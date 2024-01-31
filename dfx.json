@@ -3,8 +3,7 @@
     "icp_hello_world_rust_backend": {
       "candid": "src/icp_hello_world_rust_backend/icp_hello_world_rust_backend.did",
       "package": "icp_hello_world_rust_backend",
-      "type": "rust",
-      "post_install": ["cp target/wasm32-unknown-unknown/release/icp_hello_world_rust_backend.wasm icp_hello_world_rust_backend.wasm"]
+      "type": "rust"
     },
     "icp_hello_world_rust_frontend": {
       "dependencies": [
