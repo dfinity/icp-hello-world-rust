@@ -9,8 +9,8 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-candid = "0.9.11"
-ic-cdk = "0.7"
+candid = "0.10.3"
+ic-cdk = "0.12.0"
 
 [dev-dependencies]
-pocket-ic = "2.0.1"
+pocket-ic = "2.2.0"
