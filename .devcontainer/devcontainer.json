@@ -1,6 +1,6 @@
 {
     "name": "ICP Hello World Rust",
-    "image": "ghcr.io/dfinity/icp-dev-env:5",
+    "image": "ghcr.io/dfinity/icp-dev-env:9",
     "forwardPorts": [
         4943,
         8080
