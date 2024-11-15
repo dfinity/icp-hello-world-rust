@@ -1,7 +1,7 @@
 tasks:
   - before: |
-      export DFX_VERSION=0.22.0
-      export POCKET_IC_SERVER_VERSION=5.0.0
+      export DFX_VERSION=0.24.2
+      export POCKET_IC_SERVER_VERSION=7.0.0
       export DFXVM_INIT_YES=true
       export PATH="$HOME/bin:$PATH"
       echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
@@ -10,12 +10,10 @@ tasks:
       curl -Ls https://github.com/dfinity/pocketic/releases/download/${POCKET_IC_SERVER_VERSION}/pocket-ic-x86_64-linux.gz -o pocket-ic.gz
       gzip -d pocket-ic.gz
       chmod +x pocket-ic
-      mv pocket-ic ./src/icp_hello_world_rust_backend
+      mv pocket-ic /usr/local/bin
       sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
       source "$HOME/.local/share/dfx/env"
-      export DFX_VERSION=
-      npm install &
-      dfx start --background --clean
+      unset DFX_VERSION
       open README.md
 
 vscode:
@@ -29,7 +27,7 @@ ports:
     port: 4943
     visibility: public
     onOpen: ignore
-  - name: Dev Server
-    port: 8080
+  - name: Vite
+    port: 5173
     visibility: public
     onOpen: open-browser
