@@ -1,30 +1,24 @@
 {
-    "name": "ICP Hello World Rust",
-    "image": "ghcr.io/dfinity/icp-dev-env:9",
-    "forwardPorts": [
-        4943,
-        8080
-    ],
-    "portsAttributes": {
-        "4943": {
-            "label": "dfx",
-            "onAutoForward": "ignore"
-        },
-        "8080": {
-            "label": "dev server",
-            "onAutoForward": "openBrowser"
-        }
+  "name": "Hello World",
+  "image": "ghcr.io/fxgst/icp-dev-env:8",
+  "forwardPorts": [4943, 5173],
+  "portsAttributes": {
+    "4943": {
+      "label": "dfx",
+      "onAutoForward": "ignore"
     },
-    "onCreateCommand": "nohup bash -c 'dfx start &'",
-    "postCreateCommand": "mv /pocket-ic ./src/icp_hello_world_rust_backend",
-    "postAttachCommand": "([ -f nohup.out ] && (npm i && cat nohup.out && rm nohup.out)) || exit 0",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "dfinity-foundation.vscode-motoko",
-                "tamasfe.even-better-toml",
-                "rust-lang.rust-analyzer"
-            ]
-        }
+    "5173": {
+      "label": "vite",
+      "onAutoForward": "openBrowser"
     }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dfinity-foundation.vscode-motoko",
+        "tamasfe.even-better-toml",
+        "rust-lang.rust-analyzer"
+      ]
+    }
+  }
 }

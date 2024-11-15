@@ -2,9 +2,10 @@ use candid::{decode_one, encode_one, Principal};
 use pocket_ic::{PocketIc, WasmResult};
 use std::fs;
 
-const BACKEND_WASM: &str = "../../target/wasm32-unknown-unknown/release/icp_hello_world_rust_backend.wasm";
+const BACKEND_WASM: &str = "../../target/wasm32-unknown-unknown/release/backend.wasm";
 
 fn setup() -> (PocketIc, Principal) {
+    std::env::set_var("POCKET_IC_BIN", "/usr/local/bin/pocket-ic");
     let pic = PocketIc::new();
 
     let backend_canister = pic.create_canister();
