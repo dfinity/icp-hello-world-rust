@@ -5,7 +5,7 @@ use std::fs;
 const BACKEND_WASM: &str = "../../target/wasm32-unknown-unknown/release/backend.wasm";
 
 fn setup() -> (PocketIc, Principal) {
-    std::env::set_var("POCKET_IC_BIN", "/usr/local/bin/pocket-ic");
+    std::env::set_var("POCKET_IC_BIN", "/usr/local/bin/pocket-ic"); // Path of the pocket-ic binary
     let pic = PocketIc::new();
 
     let backend_canister = pic.create_canister();
