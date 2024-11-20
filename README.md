@@ -31,7 +31,7 @@ If your environment was restarted or has been inactive over some time, you might
 
 ## Testing your Project
 
-To run the [integration tests](/src/backend/tests/integration_tests.rs#L18) for your backend canister, first run `dfx build` to build the canister Wasm, and then `cargo test --test integration_tests`.
+To run the [integration tests](/src/backend/tests/integration_tests.rs) for your backend canister, first run `dfx build` to build the canister Wasm, and then `cargo test --test integration_tests`.
 If the canisters have not yet been created, run `dfx canister create --all` before `dfx build`.
 
 ## Local Development
