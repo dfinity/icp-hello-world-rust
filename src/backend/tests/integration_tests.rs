@@ -1,5 +1,5 @@
 use candid::{decode_one, encode_one, Principal};
-use pocket_ic::{PocketIc, WasmResult};
+use pocket_ic::PocketIc;
 use std::fs;
 
 const BACKEND_WASM: &str = "../../target/wasm32-unknown-unknown/release/backend.wasm";
@@ -19,7 +19,7 @@ fn setup() -> (PocketIc, Principal) {
 fn test_hello_world() {
     let (pic, backend_canister) = setup();
 
-    let Ok(WasmResult::Reply(response)) = pic.query_call(
+    let Ok(response) = pic.query_call(
         backend_canister,
         Principal::anonymous(),
         "greet",
