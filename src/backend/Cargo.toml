@@ -13,4 +13,4 @@ candid = "0.10.10"
 ic-cdk = "0.17.0"
 
 [dev-dependencies]
-pocket-ic = "6.0.0"
+pocket-ic = "7.0.0"
